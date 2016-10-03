@@ -1,0 +1,89 @@
+.inTask{
+	margin-left: 4.33333% !important;
+	width: 45% !important;
+	
+	ul{
+		margin: 0.5rem 0 0.2rem 0;
+		
+		li{
+			padding: 5px 20px !important;
+
+			div{
+				font-size: 1.3rem;
+			}
+		}
+	}
+	.taskContent{
+		font-size: 14px;
+
+		.checkTask{
+			padding-top: 20px;
+		}
+
+		.contentCheck{
+			padding: 0px 0px 0px 10px;
+		}
+	}
+}
+
+.iconCalendar{
+	position: relative;
+	margin-right: 20px;
+}
+
+@media only screen and (max-width: 1180px){
+
+	.inTask{
+	    width: 90% !important;
+	    padding-right: 20px !important;
+	}
+
+	.iconCalendar{
+		margin-right: 60px;
+	}
+}
+
+
+@media only screen and (max-width: 1180px){
+
+	.inTask{
+	    padding-right: 30px !important;
+	}
+
+}
+
+@media only screen and (max-width: 992px){
+
+	.inTask{
+	    width: 45% !important;
+	    padding-right: 10px !important;
+	}
+
+	.iconCalendar{
+		margin-right: 20px;
+	}
+}
+
+
+@media only screen and (max-width: 740px){
+
+	.inTask{
+	    width: 100% !important;
+	}
+
+	.iconCalendar{
+		margin-right: 10px;
+	}
+}
+
+
+@media only screen and (max-width: 356px){
+
+	.inTask{
+	    padding-right: 0px !important;
+	}
+
+	.iconCalendar{
+		margin-right: 20px;
+	}
+}

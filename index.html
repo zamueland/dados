@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Trabajo Dado | Samuel Vergara </title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript" src="jquery-1.12.0.min.js"></script>
+	<script type="text/javascript" src="dist/Chart.js"></script>
+	<script type="text/javascript" src="dist/Chart.bundle.js"></script>
+	<script type="text/javascript" src="js/dados.js"></script>	
+</head>
+<body>
+	<div class="row">
+		<div class="input field col s12">
+			<h3>Probabilidad Frecuentista</h3>
+			<p class="flow-text" align="justify">El ejercicio consiste en que se tiene un dado y éste se lanzará una determinada cantidad de veces, para esto, en el campo de texto ingrese la cantidad de veces que desee lanzar el dado, presione el botón "Lanzar" y visualizará en la gráfica de barras y la tabla la cantidad de veces que cayó el dado en una de sus seis caras, además de la probablidad de que caiga cada una de las caras específicas con respecto al lanzamiento.
+			</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class=" input field col s12"> 
+			<input  name="cantidad" id="cantidad" type="number" class="validate" required>
+			<label for="cantidad" class="validate">Ingresa cantidad de veces a lanzar el dado</label>
+			<a class="waves-effect waves-light btn red" id="calcular"> Lanzar </a>
+			<br>
+			<br>
+			<canvas id="chart" width="500" height="290"></canvas>
+    	</div> 
+    </div>  
+    <div class="row">
+    	<div class="input field col s12">
+    		<table id="table" class="highlight centered responsive" hidden>
+        	<thead>
+          		<tr>
+              		<th data-field="caras">Caras</th>
+              		<th data-field="Fi">Frecuencia Absoluta</th>
+              		<th data-field="ProbabilidadF">Probabilidad Frecuencial</th>
+          		</tr>
+        	</thead>
+        	<tbody>
+        		<tr>
+		            <td>Cara 1</td>
+		            <td id="ficara1"> </td>
+		            <td id="%cara1"></td>
+          		</tr>
+          		<tr>
+		            <td>Cara 2</td>
+		            <td id="ficara2"></td>
+		            <td id="%cara2"></td>
+          		</tr>
+          		<tr>
+		            <td>Cara 3</td>
+		            <td id="ficara3"></td>
+		            <td id="%cara3"></td>
+         		</tr>
+          		<tr>
+		            <td>Cara 4</td>
+		            <td id="ficara4"></td>
+		            <td id="%cara4"></td>
+          		</tr>
+          		<tr>
+		            <td>Cara 5</td>
+		            <td id="ficara5"></td>
+		            <td id="%cara5"></td>
+          		</tr>
+          		<tr>
+		            <td>Cara 6</td>
+		            <td id="ficara6"></td>
+		            <td id="%cara6"> </td>
+          		</tr>
+        	</tbody>
+      		</table>
+    	</div>	
+    </div>
+	</body>
+</html>

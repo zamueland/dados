@@ -1,0 +1,31 @@
+header{
+	nav{
+		.nav-wrapper{
+			
+			img{
+				width: 100%;
+				max-width: 58px;
+			}
+
+			span{
+				font-family: 'Segoe UI', "Roboto", sans-serif;
+				display: inline-block;
+			    vertical-align: top;
+			    padding-top: 3px;
+			}
+
+			.brand-logo{
+				height: inherit;
+				span{
+					height: inherit;
+				}
+			}
+		}
+
+		.button-collapse{
+			margin-right: 20px;
+		}
+	}
+
+	
+}
